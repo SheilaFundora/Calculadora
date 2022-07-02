@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="boostrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+  <h1 class="text-center mt-5">Calculadora</h1>
+
+
+  <div class="border-dark calculadora">
+
+      <div class="d-flex justify-content-between">
+        <div>
+          <input type="text" id="entrada" value="" style="text-align: end; padding-right: 10px">
+
+          <div class="mt-4">
+            <div class="d-flex">
+              <button onclick="number_calc('1')">1</button>
+              <button onclick="number_calc('2')">2</button>
+              <button onclick="number_calc('3')">3</button>
+            </div>
+            <div class="d-flex">
+              <button onclick="number_calc('4')">4</button>
+              <button onclick="number_calc('5')">5</button>
+              <button onclick="number_calc('6')">6</button>
+            </div>
+            <div class="d-flex">
+              <button onclick="number_calc('7')">7</button>
+              <button onclick="number_calc('8')">8</button>
+              <button onclick="number_calc('9')">9</button>
+            </div>
+            <div class="d-flex">
+              <button onclick="number_calc('0')">0</button>
+              <button onclick="number_calc('.')">.</button>
+              <button onclick="calculo()">=</button>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button class="mt-0" onclick="clean()">CE</button>
+          <div class="d-flex mt-4 flex-column align-content-between lateral">
+            <button onclick="operation('suma', 'entrada')" >+</button>
+            <button onclick="operation('resta','entrada')">-</button>
+            <button onclick="operation('mult','entrada')" >*</button>
+            <button onclick="operation('div','entrada')" >/</button>
+          </div>
+        </div>
+
+      </div>
+
+
+  </div>
+
+  <script src="code.js"></script>
+
+</body>
+</html>
